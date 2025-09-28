@@ -15,7 +15,6 @@ sequenceDiagram
     activate server
     Note right of browser:
     request to reload page
-
     server-->>browser: HTML document
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     deactivate server
