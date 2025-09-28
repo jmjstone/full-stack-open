@@ -7,23 +7,24 @@ sequenceDiagram
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
     activate server
-    server-->browser: HTML document
+    server-->>browser: HTML document
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
-    server-->browser: the CSS file
+    server-->>browser: the CSS file
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
     activate server
-    server-->browser: the JavaScript file
-    Note right of browser: The browser begins reading the JavaScript file that contians the GET request to data.json
+    server-->>browser: the JavaScript file
     deactivate server
+    Note right of browser: The browser begins reading the JavaScript file that contians the GET request to data.json
+
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
-    server-->browser: [{"content":"test", "date": ... }, ... ]
+    server-->>browser: [{"content":"test", "date": ... }, ... ]
     deactivate server
     Note right of browser: The browser executes the JavaScript file function that renders the notes
 ```
