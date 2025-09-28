@@ -1,4 +1,4 @@
-# full-stack-open
+# University of Helsinki's full-stack-open
 
 My work completing University of Helsinki's introduction to modern web development with JavaScript.
 
