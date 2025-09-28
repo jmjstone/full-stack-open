@@ -8,7 +8,7 @@ sequenceDiagram
     activate server
     server-->>browser: HTTP status code 302
     deactivate server
-    Note left of server: Requests browser to perform new GET request to /notes
+    Note left of server: Requests browser to perform new GET request to '/notes'
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     Note right of browser:
