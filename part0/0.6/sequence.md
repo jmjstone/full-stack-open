@@ -10,6 +10,6 @@ sequenceDiagram
     activate server
     server-->>browser: HTTP 201 Created
     deactivate server
-    Note left of server: { "message": "note created" }
+    Note left of server: Returns json success message { "message": "note created" }
 
 ```
