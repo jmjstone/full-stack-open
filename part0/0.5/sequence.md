@@ -25,5 +25,5 @@ sequenceDiagram
     activate server
     server-->browser: [{"content":"test", "date": ... }, ... ]
     deactivate server
-    Note right of browser: The browser executes the function that renders the notes
+    Note right of browser: The browser executes the JavaScript file function that renders the notes
 ```
