@@ -4,6 +4,7 @@ Situation: User creates a new note on the page https://studies.cs.helsinki.fi/ex
 sequenceDiagram
     participant browser
     participant server
+    Note right of browser: Browser sends a POST request to the server with new user note
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     server-->>browser: HTTP status code 302
