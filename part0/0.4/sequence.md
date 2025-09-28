@@ -24,11 +24,11 @@ sequenceDiagram
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
     server-->>browser: the JavaScript file
     deactivate server
-    Note left of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
+    Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
 
     activate server
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
-    server-->>browser [{"content":"test", "date": ... }, ... ]
+    server-->>browser: [{"content":"test", "date": ... }, ... ]
     deactivate server
-    Note left of browser: The browser executes the callback function that renders the notes
+    Note right of browser: The browser executes the callback function that renders the notes
 ```
